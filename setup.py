@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 import glob
 
-__version__ = '0.4.0'
+__version__ = '0.4.0.1'
 
 
 class PyTest(TestCommand):
@@ -34,7 +34,7 @@ setup(
         ],
     install_requires=[
         'warcio>=1.6.1',
-        'cchardet',
+        'faust-cchardet',
         'pyyaml',
         ],
     zip_safe=True,
@@ -60,6 +60,12 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities',
     ]
